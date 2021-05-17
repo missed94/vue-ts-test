@@ -15,7 +15,7 @@ export default Vue.extend({
   components: {
     SearchUsers,
   },
-  mounted() {
+  mounted():void {
     this.$store.dispatch('users/getAlbums')
   },
 });
